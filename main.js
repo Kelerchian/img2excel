@@ -65,8 +65,8 @@ async function main(){
     cell.fill = {
       type:"pattern",
       pattern:"solid",
-      fgColor: {argb: `${a.toString(16)}${r.toString(16)}${g.toString(16)}${b.toString(16)}` },
-      bgColor: {argb: `${a.toString(16)}${r.toString(16)}${g.toString(16)}${b.toString(16)}` }
+      fgColor: {argb: `${a.toString(16).padStart(2,0)}${r.toString(16).padStart(2,0)}${g.toString(16).padStart(2,0)}${b.toString(16).padStart(2,0)}`.toUpperCase() },
+      bgColor: {argb: `${a.toString(16).padStart(2,0)}${r.toString(16).padStart(2,0)}${g.toString(16).padStart(2,0)}${b.toString(16).padStart(2,0)}`.toUpperCase() }
     }
   })
   for(var y = 1; y<=height; y++){

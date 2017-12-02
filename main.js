@@ -73,26 +73,6 @@ async function main(){
     worksheet.getRow(y).commit()
   }
 
-
-  // for(var y = 1; y<=height; y++){
-  //   var row = worksheet.getRow(y)
-  //   // row.height = 1
-  //   for(var x = 1; x<=width; x++){
-  //     // if(y == 1) worksheet.getColumn(x).width = 1
-  //
-  //     var cell = row.getCell(x)
-  //     var color = Jimp.intToRGBA(image.getPixelColor(x,y))
-  //
-  //     cell.fill = {
-  //       type: 'pattern',
-  //       pattern: 'solid',
-  //       fgColor: {argb: 'FF'+color.r.toString(16)+color.g.toString(16)+color.b.toString(16) },
-  //       bgColor: {argb: 'FF'+color.r.toString(16)+color.g.toString(16)+color.b.toString(16) }
-  //     }
-  //   }
-  //   row.commit()
-  // }
-
   await workbook.xlsx.writeFile(path.resolve(outputFolder,"output.xlsx"))
 
   return "success"

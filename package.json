@@ -1,0 +1,25 @@
+{
+  "name": "image2excel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kelerchian/img2excel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kelerchian/img2excel/issues"
+  },
+  "homepage": "https://github.com/Kelerchian/img2excel#readme",
+  "dependencies": {
+    "exceljs": "^0.7.1",
+    "jimp": "^0.2.28"
+  },
+  "devDependencies": {}
+}
